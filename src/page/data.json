@@ -1,0 +1,29 @@
+[
+    {
+        "category": "Common",
+        "data": [
+            {
+                "name": "Github",
+                "url": "https://github.com/",
+                "description": "某hub"
+            }
+        ]
+    },
+    {
+        "category": "Blog",
+        "data": [
+            {
+                "name": "evilcos - 余弦",
+                "url": "https://evilcos.me/",
+                "rss": "https://evilcos.me/?feed=rss2",
+                "description": "evilcos's blog"
+            },
+            {
+                "name": "zu1k",
+                "url": "https://lgf.im/",
+                "rss": "https://lgf.im/index.xml",
+                "description": "zu1k's blog"
+            }
+        ]
+    }
+]
