@@ -23,6 +23,79 @@
                 "url": "https://lgf.im/",
                 "rss": "https://lgf.im/index.xml",
                 "description": "zu1k's blog"
+            },
+            {
+            	"name": "A2kaid",
+            	"url": "https://www.dongzt.cn/",
+            	"rss": "https://www.dongzt.cn/feed/",
+            	"description": "Alkaid    #二进制初学者 / 网络安全 / 大龄CTF退役选手 "
+            },
+            {
+                "name": "咲夜南梦's 博客",
+                "url": "https://196011564.github.io/",
+                "rss": "https://196011564.github.io/atom.xml",
+                "description": "咲夜南梦's 博客"
+            },
+            {
+                "name": "zhaoj",
+                "url": "https://www.zhaoj.in/",
+                "rss": "https://www.zhaoj.in/feed",
+                "description": "西兴街道物理安全研究员 / Web手@W&M / 原学生@北京联合大学 / 信息安全爱好者 / 全栈开发 / 为心中的美好而战"
+            }
+        ]
+    },
+    {
+        "category": "Academic",
+        "data": [
+            {
+                "name": "WikiCFP",
+                "url": "http://www.wikicfp.com/cfp/program?id=2660",
+                "description": "A Wiki Calls For Paper"
+            },
+            {
+            	"name": "Sec Deadline",
+            	"url": "https://sec-deadlines.github.io/",
+            	"description": "Countdowns to top Security and Privacy conference deadlines."
+            },
+            {
+            	"name": "Conference Partner",
+            	"url": "https://www.myhuiban.com/",
+            	"description": "信息技术最新国际会议和期刊列表 - Conference Partner (会伴)"
+            },
+            {
+            	"name": "CSRankings: Computer Science Rankings",
+            	"url": "http://csrankings.org/",
+            	"description": "CSRankings is a metrics-based ranking of top computer science institutions around the world."
+            },
+            {
+            	"name": "LoCCS 论文投稿引导列表",
+            	"url": "https://www.zybuluo.com/romangol/note/252848",
+            	"description": "一堆学术会议"
+            }
+        ]
+    },
+    {
+        "category": "Academic Security",
+        "data": [
+            {
+                "name": "USENIX Security",
+                "url": "https://www.usenix.org/conferences",
+                "description": "USENIX Security Symposium"
+            },
+            {
+                "name": "CCS",
+                "url": "http://www.sigsac.org/ccs.html",
+                "description": "ACM Conference on Computer and Communications Security.\nhttps://dl.acm.org/conference/ccs"
+            },
+            {
+                "name": "NDSS",
+                "url": "https://www.ndss-symposium.org/",
+                "description": "Network and Distributed System Security Symposium"
+            },
+            {
+                "name": "Oakland S&P",
+                "url": "http://www.ieee-security.org/TC/SP-Index.html",
+                "description": "IEEE Symposium on Security & Privacy"
             }
         ]
     }

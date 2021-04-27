@@ -1,0 +1,34 @@
+[
+    {
+        "search": "google",
+        "baseUrl": "https://www.google.com/search?ie=UTF-8&q="
+    },
+    {
+        "search": "baidu",
+        "baseUrl": "https://www.baidu.com/s?ie=UTF-8&wd="
+    },
+    {
+        "search": "bing",
+        "baseUrl": "https://bing.com/search?q="
+    },
+    {
+        "search": "duckduckgo",
+        "baseUrl": "https://duckduckgo.com/?q="
+    },
+    {
+        "search": "bilibili",
+        "baseUrl": "https://search.bilibili.com/all?keyword="
+    },    
+    {
+        "search": "zhihu",
+        "baseUrl": "https://www.zhihu.com/search?type=content&q="
+    },
+    {
+        "search": "taobao",
+        "baseUrl": "https://s.taobao.com/search?q="
+    },
+    {
+        "search": "jd",
+        "baseUrl": "https://search.jd.com/Search?enc=utf-8&keyword="
+    }
+]

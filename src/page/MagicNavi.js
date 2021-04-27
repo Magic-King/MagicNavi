@@ -10,9 +10,11 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import CardDeck from 'react-bootstrap/CardDeck'
+import CardDeck from 'react-bootstrap/CardDeck';
 
 import navs from './data.json';
+import searchEngine from './search.json';
+
 
 
 
@@ -21,7 +23,7 @@ function CardItem(props) {
 
     const card = props.card;
     return (
-        <Card border="light" bg="light" style={{ width: '12rem' }}>
+        <Card border="light" bg="light" style={{ width: '13rem' }}>
             <Card.Header><Card.Link href={card.url}> {card.name} </Card.Link></Card.Header>
             <Card.Body>
                 <Card.Text>{card.description}</Card.Text>
@@ -46,9 +48,12 @@ function NaviTab(props) {
             >
                 {navigation.map((item, index) => (
                     <Tab eventKey={item.category.toString()} title={item.category.toString()} key={index}>
-                        <CardDeck>
+                        <CardDeck style={{marginTop: `1rem`}}>
                             {item.data.map((item,index2) => (
-                                <CardItem card={item} key={index*index2}></CardItem>
+                                <Col>
+                                    <CardItem card={item} key={(index+1)*(index2+1)} />
+                                </Col>
+                                
                             ))}
                         </CardDeck>
                     </Tab>
@@ -85,6 +90,8 @@ class MagicNavi extends React.Component {
         console.log(this.state)
         const value = this.state.searchValue;
         const search = this.state.value;
+        /*
+        // change method to use JSON data 
         switch (search) {
             case "google": window.location.href = 'https://www.google.com/search?ie=UTF-8&q=' + value; return;
             case "baidu": window.location.href = 'https://www.baidu.com/s?ie=UTF-8&wd=' + value; return;
@@ -93,9 +100,19 @@ class MagicNavi extends React.Component {
             case "github": window.location.href = 'https://github.com/search?q=' + value; return;
             case "taobao": window.location.href = 'https://s.taobao.com/search?q=' + value; return;
             case "jd": window.location.href = 'https://search.jd.com/Search?enc=utf-8&keyword=' + value; return;
+            case "bilibili": window.location.href = 'https://search.bilibili.com/all?keyword=' + value; return;
             //case "": windos.location.href = '' + value; return;6
             default: return;
         }
+        */
+        for(var i in searchEngine){
+            if(searchEngine[i].search === search){
+                let url = searchEngine[i].baseUrl + value;
+                console.log(url)
+                window.location.href = url;
+            }
+        }
+
     }
 
     render() {
@@ -111,13 +128,11 @@ class MagicNavi extends React.Component {
                         <InputGroup >
                             <InputGroup.Prepend>
                                 <Form.Control as="select" value={this.state.value} onChange={this.handleOptionChange}>
-                                    <option value="google">Google</option>
-                                    <option value="baidu">Baidu</option>
-                                    <option value="bing">Bing</option>
-                                    <option value="duckduckgo">DuckDuckGo</option>
-                                    <option value="github">Github</option>
-                                    <option value="taobao">Taobao</option>
-                                    <option value="jd">Jd</option>
+                                    {
+                                        searchEngine.map((item, index) => (
+                                            <option value={item.search} key={index}> {item.search} </option>
+                                        ))
+                                    }
                                 </Form.Control>
                             </InputGroup.Prepend>
                             <Form.Control type="text" value={this.state.searchValue} onChange={this.handleSearchChange}
