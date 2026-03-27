@@ -75,6 +75,36 @@ export const siteCategories: SiteCategory[] = [
         description: "TS documentation",
         icon: "",
       },
+      {
+        name: "IPSW Download",
+        url: "https://ipsw.me/",
+        description: "IPSW firmware download",
+        icon: "https://ipsw.me/images/brand/favicon.png",
+      },
+      {
+        name: "Cyber Chef",
+        url: "https://gchq.github.io/CyberChef/",
+        description: "The Cyber Swiss Army Knife",
+        icon: "https://gchq.github.io/CyberChef/assets/aecc661b69309290f600.ico",
+      },
+      {
+        name: "Cyber Chef",
+        url: "https://gchq.github.io/CyberChef/",
+        description: "The Cyber Swiss Army Knife",
+        icon: "https://gchq.github.io/CyberChef/assets/aecc661b69309290f600.ico",
+      },
+      {
+        name: "ArmConvertor",
+        url: "https://armconverter.com/",
+        description: "Online HEX to ARM Converter",
+        icon: "https://armconverter.com/apple-touch-icon-60x60.png",
+      },
+      {
+        name: "ShellStorm",
+        url: "https://shell-storm.org/online/Online-Assembler-and-Disassembler/",
+        description: "Online Assembler and Disassembler",
+        icon: "https://shell-storm.org/assets/img/favicon.png",
+      },
     ],
   },
   {
